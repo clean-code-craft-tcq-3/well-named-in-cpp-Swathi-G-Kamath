@@ -73,7 +73,16 @@ void testPairToNumber(
     assert(pairNumber == expectedPairNumber);
 }
 
+void colorCodesManual(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor)
+{
+    int pairNumber = TelCoColorCoder::GetPairNumberFromColor(major, minor);
+    std::cout<<"\n***Reference Manual***\nMajor Colour : "<<TelCoColorCoder::MajorColorNames[major]<<"\nMinor Colour : "<<TelCoColorCoder::MinorColorNames[minor]<<"\nPair Number : "<<pairNumber<<"\n*********************\n\n";
+}
+
 int main() {
+    
+    colorCodesManual(TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
+    
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
