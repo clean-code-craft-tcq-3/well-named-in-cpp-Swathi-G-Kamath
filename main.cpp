@@ -1,7 +1,7 @@
 #include <iostream>
 #include<string>
 #include <assert.h>    
-#include "namespace.h"
+#include "checkcolourpairs.hpp"
 using namespace TelCoColorCoder;
 
 void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor,TelCoColorCoder::MinorColor expectedMinor)
